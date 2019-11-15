@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: When changing pages you don't have to rely on a call to the server to retrieve the information needed to display the webpage. your pages are loaded at the same time and stored locally. When you change it merely changes what information to display. All the code has been run so theres no lag when switching.
 
 ## Project Set Up
 

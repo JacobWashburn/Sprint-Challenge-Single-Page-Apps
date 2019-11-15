@@ -3,15 +3,18 @@ import styled from 'styled-components';
 
 const CardWrapper = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   width: 30%;
   border: 1px solid red;
+  border-radius: 2rem;
   margin: 3% 0;
   padding: 0 1%;
+  background-color: lightblue;
 `;
 const Image = styled.img`
-  
+  border-radius: 1.5rem;
+  margin-top: 3%;
 `;
 
 const NameH1 = styled.h1`
@@ -19,7 +22,8 @@ const NameH1 = styled.h1`
   text-align: center;
 `;
 const SpeciesH3 = styled.h3`
-  color: red;
+  color: black;
+  text-align: center;
 `;
 
 export default function CharacterCard ({character}) {
@@ -27,8 +31,8 @@ export default function CharacterCard ({character}) {
     return (
         <CardWrapper>
             <Image src={image}/>
-            <NameH1>Character: {name}</NameH1>
-            <SpeciesH3>Species: {species}</SpeciesH3>
+            <NameH1>{name}</NameH1>
+            <SpeciesH3>{species}</SpeciesH3>
         </CardWrapper>
     );
 }

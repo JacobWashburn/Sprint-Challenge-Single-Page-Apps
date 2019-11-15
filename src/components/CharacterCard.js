@@ -6,7 +6,7 @@ const CardWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 30%;
-  border: 1px solid red;
+  border: 3px solid Green;
   border-radius: 2rem;
   margin: 3% 0;
   padding: 0 1%;

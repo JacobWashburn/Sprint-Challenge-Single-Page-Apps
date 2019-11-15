@@ -8,7 +8,11 @@ const CardWrapper = styled.div`
   width: 30%;
   border: 1px solid red;
   margin: 3% 0;
-`
+  padding: 0 1%;
+`;
+const Image = styled.img`
+  
+`;
 
 const NameH1 = styled.h1`
   color: blue;
@@ -19,11 +23,12 @@ const SpeciesH3 = styled.h3`
 `;
 
 export default function CharacterCard ({character}) {
-  const {name,species} = character
+    const {name, species, image} = character;
     return (
         <CardWrapper>
-        <NameH1>Character: {name}</NameH1>
-          <SpeciesH3>Species: {species}</SpeciesH3>
-          </CardWrapper>
+            <Image src={image}/>
+            <NameH1>Character: {name}</NameH1>
+            <SpeciesH3>Species: {species}</SpeciesH3>
+        </CardWrapper>
     );
 }
